@@ -1,0 +1,30 @@
+language: php
+
+matrix:
+  include:
+    - php: 5.4
+    - php: 5.6
+    - php: 7.0
+    - php: 7.2
+      env: MORE=true
+
+install:
+  - composer update --prefer-dist
+
+script:
+  - vendor/bin/phpunit
+  - |
+    if [[ $MORE != "" ]]; then
+      wget https://github.com/phpstan/phpstan/releases/download/0.10.3/phpstan.phar;
+      php phpstan.phar analyze src --level=4
+    fi
+
+after_script:
+  - |
+    if [[ $MORE != "" ]]; then
+      wget https://github.com/php-coveralls/php-coveralls/releases/download/v2.1.0/php-coveralls.phar;
+      php php-coveralls.phar -v;
+    fi
+
+notifications:
+  email: never
