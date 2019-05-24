@@ -43,7 +43,7 @@ Baidu Smart Mini-Program SDK for PHP
 1. 安装。
 
     ```bash
-    composer require NiZerin/baidu-mini-program-sdk:dev-master
+    composer require nizerin/baidu-mini-program-sdk:dev-master
     ```
 
     > Composer 中国镜像近期处于维护状态；若无法安装，建议使用原版 Packagist 或使用 [Laravel-China 镜像](https://NiZerin.cn/documents/packagist-mirror-in-china/)。
