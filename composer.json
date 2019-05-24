@@ -1,5 +1,5 @@
 {
-    "name": "NiZerin/baidu-mini-program-sdk",
+    "name": "nizerin/baidu-mini-program-sdk",
     "description": "百度小程序第三方 PHP SDK，助力智能小程序开发。",
     "type": "library",
     "require": {
@@ -19,7 +19,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "NiZerin",
+            "name": "nizerin",
             "email": "nizerin98@gmail.com"
         }
     ],
